@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="92" viewBox="0 0 960 92" fill="none" role="img" aria-labelledby="title">
+  <title id="title">MohamedRF — teal and violet wave</title>
+  <defs>
+    <linearGradient id="wave" x1="0" y1="0" x2="960" y2="65" gradientUnits="userSpaceOnUse"><stop stop-color="#75DCCD"/><stop offset=".52" stop-color="#83B8DB"/><stop offset="1" stop-color="#B39BE4"/></linearGradient>
+  </defs>
+  <path d="M0 0H960V45C800 108 645 4 470 43S160 109 0 46Z" fill="url(#wave)" opacity=".18"/>
+  <path d="M0 0H960V29C790 89 638 2 466 30S170 89 0 33Z" fill="url(#wave)" opacity=".48"/>
+  <path d="M0 0H960V15C792 64 628 0 463 17S168 61 0 20Z" fill="url(#wave)"/>
+</svg>
