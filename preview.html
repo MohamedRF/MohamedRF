@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MohamedRF — README preview</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #0d1117; color: #d1d9e0; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 900px; margin: 32px auto; padding: 32px; border: 1px solid #30363d; border-radius: 8px; }
+h1 { font-size: 28px; margin: 22px 0 12px; letter-spacing: -.6px; }
+h4 { margin: 16px 0 6px; font-size: 14px; color: #aebdca; }
+h3 { margin: 25px 0 14px; font-size: 19px; }
+a { color: #8cd9cf; text-decoration: none; } a:hover { text-decoration: underline; }
+img { max-width: 100%; vertical-align: middle; } p img[height] { margin: 3px 2px 3px 0; }
+p { margin: 16px 0; } sub { font-size: 12px; vertical-align: baseline; color: #9daab8; }
+hr { height: 1px; margin: 28px 0; border: 0; background: #30363d; }
+ul { padding-left: 24px; } li { margin: 6px 0; }
+@media (max-width: 600px) { main { border: 0; padding: 18px; margin: 0; } h1 { font-size: 23px; } body { font-size: 14px; } }
+pre { overflow-x: auto; padding: 20px; border: 1px solid #30363d; border-radius: 8px; background: #151b23; font: 13px/1.6 Consolas, "Liberation Mono", monospace; }
+pre code { font: inherit; }
+h3 code { color: #8cd9cf; font-size: 16px; }
+.rust-string { color: #a5d6ff; } .rust-keyword { color: #ff7b72; }
+.rust-type { color: #ffa657; } .rust-macro { color: #d2a8ff; }
+.rust-attribute { color: #8b949e; }
+</style>
+</head><body><main>
+<p align="center">
+  <img src="./assets/wave.svg" width="100%" alt="A teal and violet wave" />
+</p>
+
+<h1 align="center">Hi, I'm Mohamed Rasik Farid 👋</h1>
+
+<p align="center">
+  <strong>Software Architect</strong><br />
+  <sub>Enterprise systems · Full-stack development · Pursuing AI engineering</sub>
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/mohamedrasikfarid/">LinkedIn ↗</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/MohamedRF?tab=repositories">My projects ↗</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/MohamedRF?tab=stars">Things I find interesting ↗</a>
+</p>
+
+<hr />
+
+<h3>About me · <code>profile.rs</code></h3>
+
+<pre><code class="language-rust"><span class="rust-attribute">#[derive(Debug)]</span>
+<span class="rust-keyword">struct</span> <span class="rust-type">SoftwareArchitect</span> {
+    name: &amp;<span class="rust-keyword">&#x27;static</span> <span class="rust-type">str</span>,
+    focus: &amp;<span class="rust-keyword">&#x27;static</span> <span class="rust-type">str</span>,
+    background: &amp;<span class="rust-keyword">&#x27;static</span> [&amp;<span class="rust-keyword">&#x27;static</span> <span class="rust-type">str</span>],
+    strengths: &amp;<span class="rust-keyword">&#x27;static</span> [&amp;<span class="rust-keyword">&#x27;static</span> <span class="rust-type">str</span>],
+    exploring: &amp;<span class="rust-keyword">&#x27;static</span> [&amp;<span class="rust-keyword">&#x27;static</span> <span class="rust-type">str</span>],
+    github: &amp;<span class="rust-keyword">&#x27;static</span> <span class="rust-type">str</span>,
+    linkedin: &amp;<span class="rust-keyword">&#x27;static</span> <span class="rust-type">str</span>,
+}
+
+<span class="rust-keyword">fn</span> main() {
+    <span class="rust-keyword">let</span> me = <span class="rust-type">SoftwareArchitect</span> {
+        name: <span class="rust-string">&quot;Mohamed Rasik Farid&quot;</span>,
+        focus: <span class="rust-string">&quot;Enterprise architecture → AI engineering&quot;</span>,
+        background: &amp;[
+            <span class="rust-string">&quot;Enterprise web apps&quot;</span>, <span class="rust-string">&quot;Digital governance&quot;</span>,
+            <span class="rust-string">&quot;Academic systems&quot;</span>, <span class="rust-string">&quot;Payments &amp; cloud services&quot;</span>,
+        ],
+        strengths: &amp;[
+            <span class="rust-string">&quot;Full-stack development&quot;</span>, <span class="rust-string">&quot;API &amp; system integration&quot;</span>,
+            <span class="rust-string">&quot;Database architecture&quot;</span>, <span class="rust-string">&quot;Technical leadership&quot;</span>,
+        ],
+        exploring: &amp;[
+            <span class="rust-string">&quot;LLM applications&quot;</span>, <span class="rust-string">&quot;RAG &amp; vector databases&quot;</span>,
+            <span class="rust-string">&quot;AI agents&quot;</span>, <span class="rust-string">&quot;Prompt engineering &amp; automation&quot;</span>,
+        ],
+        github: <span class="rust-string">&quot;github.com/MohamedRF&quot;</span>,
+        linkedin: <span class="rust-string">&quot;linkedin.com/in/mohamedrasikfarid&quot;</span>,
+    };
+
+    <span class="rust-macro">println!</span>(<span class="rust-string">&quot;{me:#?}&quot;</span>);
+}
+</code></pre>
+
+<h3>Languages, frameworks &amp; tools</h3>
+
+<h4>Languages</h4>
+
+<p>
+  <img src="./assets/python.svg" height="28" alt="Python" />
+  <img src="./assets/javascript.svg" height="28" alt="JavaScript" />
+  <img src="./assets/typescript.svg" height="28" alt="TypeScript" />
+  <img src="./assets/php.svg" height="28" alt="PHP" />
+  <img src="./assets/sql.svg" height="28" alt="SQL" />
+  <img src="./assets/html.svg" height="28" alt="HTML5" />
+  <img src="./assets/css.svg" height="28" alt="CSS3" />
+</p>
+
+<h4>Frameworks &amp; runtime</h4>
+
+<p>
+  <img src="./assets/react.svg" height="28" alt="React" />
+  <img src="./assets/nodejs.svg" height="28" alt="Node.js" />
+  <img src="./assets/express.svg" height="28" alt="Express" />
+  <img src="./assets/laravel.svg" height="28" alt="Laravel" />
+  <img src="./assets/fastapi.svg" height="28" alt="FastAPI" />
+  <img src="./assets/tailwind.svg" height="28" alt="Tailwind CSS" />
+</p>
+
+<h4>Libraries</h4>
+
+<p>
+  <img src="./assets/numpy.svg" height="28" alt="NumPy" />
+  <img src="./assets/pandas.svg" height="28" alt="pandas" />
+  <img src="./assets/axios.svg" height="28" alt="Axios" />
+</p>
+
+<h4>Databases</h4>
+
+<p>
+  <img src="./assets/oracle.svg" height="28" alt="Oracle" />
+  <img src="./assets/postgresql.svg" height="28" alt="PostgreSQL" />
+  <img src="./assets/mysql.svg" height="28" alt="MySQL" />
+</p>
+
+<h4>Development &amp; delivery</h4>
+
+<p>
+  <img src="./assets/git.svg" height="28" alt="Git" />
+  <img src="./assets/github.svg" height="28" alt="GitHub" />
+  <img src="./assets/docker.svg" height="28" alt="Docker" />
+  <img src="./assets/vscode.svg" height="28" alt="VS Code" />
+  <img src="./assets/postman.svg" height="28" alt="Postman" />
+  <img src="./assets/npm.svg" height="28" alt="npm" />
+  <img src="./assets/vite.svg" height="28" alt="Vite" />
+  <img src="./assets/github-actions.svg" height="28" alt="GitHub Actions" />
+  <img src="./assets/linux.svg" height="28" alt="Linux" />
+</p>
+
+<h4>Currently exploring</h4>
+
+<p>LLM applications · Generative AI · RAG · Vector databases · AI agents · Prompt engineering</p>
+
+<h3>A few things I'm building</h3>
+
+<ul>
+  <li><a href="https://github.com/MohamedRF/VLMux"><strong>VLMux</strong></a> — Giving vision-language models a computer. <sub>In development.</sub></li>
+  <li><a href="https://github.com/MohamedRF/DBMux"><strong>DBMux</strong></a> — Connecting AI coding agents to Oracle and PostgreSQL.</li>
+  <li><a href="https://github.com/MohamedRF/arc_to_zen"><strong>Arc to Zen</strong></a> — Moving your browser workspace from Arc to Zen on macOS.</li>
+</ul>
+
+<h3>🐍 A snake eating my contributions</h3>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MohamedRF/MohamedRF/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MohamedRF/MohamedRF/output/github-snake.svg" />
+    <img src="https://raw.githubusercontent.com/MohamedRF/MohamedRF/output/github-snake.svg" width="100%" alt="An animated snake eating MohamedRF's GitHub contribution graph" />
+  </picture>
+</p>
+
+<p align="center"><sub>One contribution at a time. One hungry snake.</sub></p>
+<p align="center"><sub>Preview note: the animation becomes available after the first successful GitHub Actions run.</sub></p>
+
+<hr />
+
+<p align="center">
+  <a href="https://buymeacoffee.com/mohamedrf">☕ Buy me a coffee</a><br />
+  <sub>If my work helps you, you can support what I build next.</sub>
+</p>
+
+<p align="center">
+  <img src="./assets/signature.svg" width="340" alt="MRF — turning ideas into useful tools." />
+</p>
+
+<p align="center">
+  <sub>Let's build something useful. <a href="https://www.linkedin.com/in/mohamedrasikfarid/">Connect on LinkedIn ↗</a></sub><br />
+  <sub>Layout inspired by <a href="https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/blob/master/templates/Abdalrahman-Alhamod.md">Abdalrahman Alhamod's profile template</a> · Code-style bio inspired by <a href="https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/blob/master/templates/rednafi.md">rednafi</a>.</sub>
+</p>
+
+</main></body></html>
