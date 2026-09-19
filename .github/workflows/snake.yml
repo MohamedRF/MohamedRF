@@ -1,0 +1,65 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths:
+      - .github/workflows/snake.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Generate light and dark contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: MohamedRF
+          outputs: |
+            dist/github-snake.svg?color_snake=%238575C9&color_dots=%23ebedf0,%23bcece4,%2379cfc3,%23489f99,%23276764
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=%23B39BE4&color_dots=%23161b22,%231d4548,%232e7374,%2353a9a3,%2379cfc3
+
+      - name: Publish animations to output branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s dist/github-snake.svg
+          test -s dist/github-snake-dark.svg
+
+          output_dir="$(mktemp -d)"
+          output_ref="$(git ls-remote --heads origin refs/heads/output)"
+          if [ -n "$output_ref" ]; then
+            git fetch origin output
+            git worktree add --detach "$output_dir" FETCH_HEAD
+          else
+            git worktree add --detach "$output_dir" HEAD
+            git -C "$output_dir" switch --orphan snake-output
+          fi
+
+          cp dist/github-snake.svg dist/github-snake-dark.svg "$output_dir/"
+          git -C "$output_dir" config user.name 'github-actions[bot]'
+          git -C "$output_dir" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$output_dir" add -- github-snake.svg github-snake-dark.svg
+
+          if git -C "$output_dir" diff --cached --quiet; then
+            echo 'Contribution animations are unchanged.'
+            exit 0
+          fi
+
+          git -C "$output_dir" commit -m 'Update contribution snake animations'
+          git -C "$output_dir" push origin HEAD:refs/heads/output
