@@ -28,7 +28,6 @@ struct SoftwareArchitect {
     strengths: &'static [&'static str],
     exploring: &'static [&'static str],
     github: &'static str,
-    linkedin: &'static str,
 }
 
 fn main() {
