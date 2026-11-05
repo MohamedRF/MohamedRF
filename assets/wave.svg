@@ -1,9 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="92" viewBox="0 0 960 92" fill="none" role="img" aria-labelledby="title">
   <title id="title">MohamedRF — teal and violet wave</title>
   <defs>
-    <linearGradient id="wave" x1="0" y1="0" x2="960" y2="65" gradientUnits="userSpaceOnUse"><stop stop-color="#75DCCD"/><stop offset=".52" stop-color="#83B8DB"/><stop offset="1" stop-color="#B39BE4"/></linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="960" y2="65" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#75DCCD"/>
+      <stop offset=".52" stop-color="#83B8DB"/>
+      <stop offset="1" stop-color="#B39BE4"/>
+      <animate attributeName="x1" values="0;90;0" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="960;870;960" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
   </defs>
-  <path d="M0 0H960V45C800 108 645 4 470 43S160 109 0 46Z" fill="url(#wave)" opacity=".18"/>
-  <path d="M0 0H960V29C790 89 638 2 466 30S170 89 0 33Z" fill="url(#wave)" opacity=".48"/>
-  <path d="M0 0H960V15C792 64 628 0 463 17S168 61 0 20Z" fill="url(#wave)"/>
+  <path d="M0 0H960V45C800 108 645 4 470 43S160 109 0 46Z" fill="url(#wave)" opacity=".18">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite" values="M0 0H960V45C800 108 645 4 470 43S160 109 0 46Z;M0 0H960V50C800 98 645 14 470 38S160 99 0 42Z;M0 0H960V45C800 108 645 4 470 43S160 109 0 46Z"/>
+    <animate attributeName="opacity" values="0.18;0.28;0.18" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 0H960V29C790 89 638 2 466 30S170 89 0 33Z" fill="url(#wave)" opacity=".48">
+    <animate attributeName="d" dur="7s" repeatCount="indefinite" values="M0 0H960V29C790 89 638 2 466 30S170 89 0 33Z;M0 0H960V34C790 79 638 14 466 25S170 79 0 29Z;M0 0H960V29C790 89 638 2 466 30S170 89 0 33Z"/>
+    <animate attributeName="opacity" values="0.48;0.60;0.48" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 0H960V15C792 64 628 0 463 17S168 61 0 20Z" fill="url(#wave)">
+    <animate attributeName="d" dur="5s" repeatCount="indefinite" values="M0 0H960V15C792 64 628 0 463 17S168 61 0 20Z;M0 0H960V20C792 54 628 10 463 12S168 51 0 16Z;M0 0H960V15C792 64 628 0 463 17S168 61 0 20Z"/>
+  </path>
 </svg>

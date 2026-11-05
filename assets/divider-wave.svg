@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="36" viewBox="0 0 960 36" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Animated teal and violet divider wave</title>
+  <defs>
+    <linearGradient id="dividerWave" x1="0" y1="0" x2="960" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#79CFC3"/>
+      <stop offset=".5" stop-color="#83B8DB"/>
+      <stop offset="1" stop-color="#B39BE4"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 18 Q120 4 240 18 T480 18 T720 18 T960 18 V36 H0 Z" fill="url(#dividerWave)" opacity=".55">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite" values="M0 18 Q120 4 240 18 T480 18 T720 18 T960 18 V36 H0 Z;M0 18 Q120 32 240 18 T480 18 T720 18 T960 18 V36 H0 Z;M0 18 Q120 4 240 18 T480 18 T720 18 T960 18 V36 H0 Z"/>
+  </path>
+  <path d="M0 18 Q120 10 240 18 T480 18 T720 18 T960 18" stroke="url(#dividerWave)" stroke-width="3" stroke-linecap="round" fill="none">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite" values="M0 18 Q120 10 240 18 T480 18 T720 18 T960 18;M0 18 Q120 26 240 18 T480 18 T720 18 T960 18;M0 18 Q120 10 240 18 T480 18 T720 18 T960 18"/>
+  </path>
+</svg>

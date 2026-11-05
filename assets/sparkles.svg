@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="28" viewBox="0 0 180 28" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Animated sparkles</title>
+  <g fill="#79CFC3">
+    <path d="M12 2l2.5 8 8 2.5-8 2.5L12 23l-2.5-8-8-2.5 8-2.5z">
+      <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M48 6l1.8 5.7 5.7 1.8-5.7 1.8L48 21l-1.8-5.7-5.7-1.8 5.7-1.8z" fill="#83B8DB">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M84 3l2 6.5 6.5 2-6.5 2-2 6.5-2-6.5-6.5-2 6.5-2z" fill="#B39BE4">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M120 7l1.8 5.7 5.7 1.8-5.7 1.8L120 22l-1.8-5.7-5.7-1.8 5.7-1.8z" fill="#79CFC3">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M156 4l1.7 5.5 5.5 1.7-5.5 1.7L156 18.4l-1.7-5.5-5.5-1.7 5.5-1.7z" fill="#83B8DB">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
