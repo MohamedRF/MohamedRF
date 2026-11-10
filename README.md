@@ -103,6 +103,7 @@ fn main() {
 <h4>Languages</h4>
 
 <p>
+  <img src="./assets/rust.svg" height="28" alt="Rust" />
   <img src="./assets/python.svg" height="28" alt="Python" />
   <img src="./assets/javascript.svg" height="28" alt="JavaScript" />
   <img src="./assets/typescript.svg" height="28" alt="TypeScript" />
@@ -161,7 +162,7 @@ fn main() {
   <summary>Stack as text (for screen readers / search)</summary>
 
   <ul>
-    <li><strong>Languages:</strong> Python · JavaScript · TypeScript · PHP · SQL · HTML5 · CSS3</li>
+    <li><strong>Languages:</strong> Rust · Python · JavaScript · TypeScript · PHP · SQL · HTML5 · CSS3</li>
     <li><strong>Frameworks &amp; runtime:</strong> React · Node.js · Express · Laravel · FastAPI · Tailwind CSS</li>
     <li><strong>Libraries:</strong> NumPy · pandas · Axios</li>
     <li><strong>Databases:</strong> Oracle · PostgreSQL · MySQL</li>
