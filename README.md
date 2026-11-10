@@ -180,7 +180,7 @@ fn main() {
 
 <p id="snake"></p>
 
-<h3>🐍 A snake eating my contributions</h3>
+<h3>🐍 Contribution Snake</h3>
 
 <p align="center">
   <picture>
@@ -227,8 +227,4 @@ fn main() {
 
 <p align="center">
   <img src="./assets/signature.svg" width="340" alt="MRF — turning ideas into useful tools." />
-</p>
-
-<p align="center">
-  <sub>Layout inspired by <a href="https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/blob/master/templates/Abdalrahman-Alhamod.md">Abdalrahman Alhamod's profile template</a> · Code-style bio inspired by <a href="https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/blob/master/templates/rednafi.md">rednafi</a>.</sub>
 </p>
