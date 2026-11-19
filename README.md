@@ -19,6 +19,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Open_to_collaborate-79cfc3?style=for-the-badge" alt="Open to collaborate" />
+  <img src="https://komarev.com/ghpvc/?username=MohamedRF&amp;label=Profile%20Views&amp;color=79cfc3&amp;style=for-the-badge" alt="Profile views" />
 </p>
 
 <p align="center">
